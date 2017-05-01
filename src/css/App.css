@@ -1,0 +1,36 @@
+.App{
+	height: 100%;
+}
+
+.App-header{
+	background-color: #94618e;
+	color: white;
+	height: 10%;
+	min-height: 50px;
+	max-height: 90px;
+	text-align: center;
+}
+
+.App-header-text{
+	font-size: 2em;
+	position: relative;
+	top: 15%;
+}
+
+.App-footer{
+	background-color:#946183;
+	color: white;
+	position: fixed;
+	bottom:0;
+	height: 10%;
+	width:100%;
+	min-height: 50px;
+	max-height: 90px;
+	text-align: center;
+}
+
+.App-footer-text{
+	font-size: 2em;
+	position: relative;
+	top: 15%;
+}
