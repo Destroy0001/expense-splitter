@@ -3,12 +3,16 @@
 }
 
 .App-header{
-	background-color: #94618e;
+	background-color: #77c9d4;
 	color: white;
 	height: 10%;
+	position: fixed;
+	top:0;
+	width: 100%;
 	min-height: 50px;
 	max-height: 90px;
 	text-align: center;
+	z-index: 2;
 }
 
 .App-header-text{
@@ -18,7 +22,7 @@
 }
 
 .App-footer{
-	background-color:#946183;
+	background-color:#77c9d4;
 	color: white;
 	position: fixed;
 	bottom:0;
@@ -27,10 +31,12 @@
 	min-height: 50px;
 	max-height: 90px;
 	text-align: center;
+	z-index: 0;
 }
 
 .App-footer-text{
 	font-size: 2em;
 	position: relative;
 	top: 15%;
+
 }
