@@ -5,3 +5,61 @@ html, body, #app{
 body {
 	background-color: #43c5d6;
 }
+
+.App{
+	height: 100%;
+	margin:0 auto;
+}
+
+.App-header{
+	background-color: #77c9d4;
+	color: white;
+	height: 10%;
+	top:0;
+	width: 100%;
+	min-height: 50px;
+	max-height: 90px;
+	text-align: center;
+	z-index: 2;
+}
+
+.App-header-text{
+	font-size: 2em;
+	position: relative;
+	top: 15%;
+}
+
+
+.App-content{
+	position: relative;
+	height: 100%;
+}
+.App-footer{
+	background-color:#77c9d4;
+	color: white;
+	position: relative;
+	bottom:0;
+	height: 10%;
+	width:100%;
+	min-height: 50px;
+	max-height: 90px;
+	text-align: center;
+	z-index: 0;
+}
+
+.App-footer-text{
+	font-size: 2em;
+	position: relative;
+	top: 15%;
+
+}
+
+.Tab{
+	width:33%;
+	height:100%;
+	position: relative;
+	display: inline-block;
+	border-width: 2px;
+	border-color: red;
+	z-index: 4
+}
