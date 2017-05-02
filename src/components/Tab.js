@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../css/Tab.css';
 class Tab extends Component {
 	constructor(props){
 		super(props);
@@ -7,10 +8,14 @@ class Tab extends Component {
 	render() {
 		return (
 			<div className={`Tab ${this.props.styleName}`}>
+				<input className="Tab-selector" id={`Tab-${this.props.styleName}`} type="radio" name="tabs" aria-hidden="true" />
 				<div className="Tab-header ">
+					<label  htmlFor={`Tab-${this.props.styleName}`}>
 					{ this.props.header }
+					</label>
 				</div>
 				<div className="Tab-content">
+					{ this.props.header }
 				</div>
 			</div>
 		);
