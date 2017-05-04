@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import TabContainer from '../containers/TabContainer';
 import '../css/App.css';
 
 class App extends Component {
@@ -9,11 +8,11 @@ class App extends Component {
 				<div className="App-header">
 					<span className="App-header-text">Expense Splitter</span>
 				</div>
+				<div className="App-header-spacer"></div>
 				<div className="App-content">
-						<TabContainer styleName="friends" header="Friends"> </TabContainer>
-						<TabContainer styleName="groups" header="Groups"> </TabContainer>
-						<TabContainer styleName="activity" header="Activity"> </TabContainer>
+					{this.props.children}
 				</div>
+				<div className=".App-footer-spacer"></div>
 				<div className="App-footer">
 					<span className="App-footer-text">&copy; 2017 Ashish Jhanwar</span>
 				</div>

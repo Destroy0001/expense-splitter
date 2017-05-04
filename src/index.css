@@ -1,5 +1,8 @@
 html, body, #app{
 	height: 100%;
+	width: auto !important;
+	min-height: 580px;
+	min-width: 410px;
 }
 
 body {

@@ -3,7 +3,16 @@
 	margin:0 auto;
 }
 
-.App-header, .App-footer{
+.App-header{
+	top:0;
+}
+
+.App-footer{
+	bottom:0;
+}
+
+.App-header,.App-footer{
+	position:fixed;
 	background-color: #FFB74C;
 	height: 8%;
 	width: 100%;
@@ -11,26 +20,21 @@
 	max-height: 90px;
 }
 
-.App-content{
-	height: 80%;
-	white-space: nowrap;
-}
-
-.App-header{
-	top:0;
-}
-
-.App-footer{
-	position: fixed;
-	bottom: 0;
-}
-
-.App-footer-text,
-.App-header-text{
+.App-header-text,.App-footer-text{
 	position: relative;
 	font-size: 1.8em;
 	top: 15%;
 }
 
+.App-header-spacer,.App-footer-spacer{
+	height: 8%;
+	width: 100%;
+	min-height: 50px;
+	max-height: 90px;
+}
 
+.App-content{
+	height: 84%;
+	white-space: nowrap;
+}
 

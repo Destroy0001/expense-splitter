@@ -1,20 +1,21 @@
 /*
 * This is the entry point to the applications,
-* we'd have two routes here, one for login, and other for the application itself. 
+* we'd have three routes, 
+* one for login,
+* another for registration,
+* and the last for the app itself
 */
 
 import React from 'react';
-import { createStore, combineReducers, applyMiddleware } from 'redux';
 import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
-import { Router, Route } from 'react-router';
-
-
-import LoginContainer from './containers/LoginContainer';
 import AppContainer from './containers/AppContainer';
+import { BrowserRouter as Router, Route, browserHistory } from 'react-router-dom';
+
 import './index.css';
 
 ReactDOM.render(
-	<AppContainer />,
+	<Router history={browserHistory} >
+		<Route path="/" component={AppContainer} />
+	</Router>,
 	document.getElementById('app')
 );
