@@ -4,8 +4,8 @@
 }
 
 .App-header, .App-footer{
-	background-color: #03A9F5;
-	height: 10%;
+	background-color: #FFB74C;
+	height: 8%;
 	width: 100%;
 	min-height: 50px;
 	max-height: 90px;
@@ -20,7 +20,6 @@
 	top:0;
 }
 
-
 .App-footer{
 	position: fixed;
 	bottom: 0;
@@ -29,7 +28,7 @@
 .App-footer-text,
 .App-header-text{
 	position: relative;
-	font-size: 2em;
+	font-size: 1.8em;
 	top: 15%;
 }
 

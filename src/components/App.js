@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import Tab from './Tab';
+import TabContainer from '../containers/TabContainer';
 import '../css/App.css';
+
 class App extends Component {
 	render() {
 		return (
@@ -9,9 +10,9 @@ class App extends Component {
 					<span className="App-header-text">Expense Splitter</span>
 				</div>
 				<div className="App-content">
-						<Tab styleName="friends" header="Friends"> </Tab>
-						<Tab styleName="groups" header="Groups"> </Tab>
-						<Tab styleName="activity" header="Activity"> </Tab>
+						<TabContainer styleName="friends" header="Friends"> </TabContainer>
+						<TabContainer styleName="groups" header="Groups"> </TabContainer>
+						<TabContainer styleName="activity" header="Activity"> </TabContainer>
 				</div>
 				<div className="App-footer">
 					<span className="App-footer-text">&copy; 2017 Ashish Jhanwar</span>
