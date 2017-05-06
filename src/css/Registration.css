@@ -1,9 +1,41 @@
-.Registration{
-	height: 100%;
-	margin:0 auto;
+.Registration-content{
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: #04a1b5;
+	width: 270px;
+	height: 270px;
+	z-index: 0;
 }
 
-.Registration-content{
-	height: 84%;
-	white-space: nowrap;
+.Registration-form{
+	margin: 20% 20% 8% 20%;
+	z-index: 0;
+}
+
+.Registration-form > input {
+	border-radius: 0;
+	display: block;
+	margin:2px;
+	text-align:center;
+	z-index: 0;
+}
+
+.Registration-button {
+	margin-top: 4px;
+	width:75%;
+	z-index: 0;
+}
+
+.Login-link{
+	position: absolute;
+	color:blue;
+	text-decoration:underline;
+	bottom:5%;
+	left:0;
+	right:0;
+	z-index: 0;
 }

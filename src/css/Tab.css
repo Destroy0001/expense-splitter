@@ -4,14 +4,13 @@
 	height:100%;
 	display: inline-block;
 	z-index: 4;
-	/*background-color: #03e1fa;*/
 	overflow: hidden;
 }
 
 .Tab-header{
 	width: 100%;
 	font-size: 2em;
-	background-color: #03bffa;
+	background-color: #04a1b5;
 }
 
 .Tab-header > label{
@@ -32,7 +31,7 @@
 }
 
 .Tab > .Tab-selector:checked + .Tab-header{
-	background-color:#03f2f4;
+	background-color:#00b8b9;
 }
 
 .Tab > .Tab-selector:checked + .Tab-header + .Tab-content{

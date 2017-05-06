@@ -1,3 +1,1 @@
-/* contains application level constants, including actions */
-export const SENDING_LOGIN_REQUEST = 'SENDING_REQUEST';
-export const SET_ERROR_MESSAGE = 'SET_ERROR_MESSAGE';
+export const BASE_API_URL  = process.env['BASE_API_URL'] || 'base_api_url';

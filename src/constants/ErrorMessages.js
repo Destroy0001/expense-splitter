@@ -1,4 +1,4 @@
 /*contains error messages*/
-export default const error = {
-
+export const errors = {
+	INVALID_LOGIN : 'The email or password is incorrect'
 }

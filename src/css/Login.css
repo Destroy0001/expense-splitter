@@ -1,9 +1,46 @@
-.Login{
-	height: 100%;
-	margin:0 auto;
+.Login-content{
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: #04a1b5;
+	width: 270px;
+	height: 270px;
 }
 
-.Login-content{
-	height: 84%;
-	white-space: nowrap;
+.Login-form{
+	margin: 20%;
+}
+
+.Login-form > input {
+	border-radius: 0;
+	display: block;
+	margin:2px;
+	text-align:center;
+}
+
+.Login-error {
+	position: absolute;
+	top: 5%;
+	left: 0;
+	right: 0;
+	color: #d9534f;
+	font-size: 1.2em;
+}
+
+.Login-button {
+	margin-top: 4px;
+	width:75%;
+}
+
+.Registration-link{
+	position: absolute;
+	color:blue;
+	text-decoration:underline;
+	bottom:5%;
+	left:0;
+	right:0;
+	font-size: 1em;
 }
