@@ -1,20 +1,15 @@
-
 const assign = Object.assign || require('object.assign');
 const initialState = {
 	email:null,
 	name:null,
-	contacts:{
-
-	},
-	groups:{
-
-	},
-	expenses:{
-
-	}
+	contacts:null,
+	groups:null,
+	expenses:null,
 	requestingData:false
 }
 
-export default reducer(state = initialState, action){
+const reducer = (state = initialState, action) => {
 	return state;
 }
+
+export default reducer;

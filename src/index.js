@@ -8,20 +8,26 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route, browserHistory, Provider } from 'react-router-dom';
+import { BrowserRouter as Router, Route, browserHistory } from 'react-router-dom';
 import { createStore, combineReducers, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
+import { Provider } from 'react-redux';
 import SessionReducer from './reducers/SessionReducer';
-import UserReducer from './reducers/SessionReducer';
+import UserReducer from './reducers/UserReducer';
 
 import AppContainer from './containers/AppContainer';
 import './index.css';
 
-const store = createStore(combineReducers(SessionReducer, UserReducer));
+const store = createStore(
+	combineReducers({session:SessionReducer,user:UserReducer}),
+	applyMiddleware(thunk)
+	);
+
 ReactDOM.render(
+	<Provider store={store}>
 		<Router history={browserHistory} >
 			<Route path="/" component={AppContainer} />
-		</Router>,
+		</Router>
+	</Provider>,
 	document.getElementById('app')
-);
-
-store.subscribe(render);
+)
