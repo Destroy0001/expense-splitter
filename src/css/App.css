@@ -18,6 +18,7 @@
 	width: 100%;
 	min-height: 50px;
 	max-height: 90px;
+	z-index: 10;
 }
 
 .App-header-text,.App-footer-text{

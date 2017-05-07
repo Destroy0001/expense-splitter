@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import '../css/Tab.css';
 class Tab extends Component {
 	constructor(props){
@@ -15,7 +16,7 @@ class Tab extends Component {
 					</label>
 				</div>
 				<div className="Tab-content">
-					{ this.props.header }
+					{ this.props.children}
 				</div>
 			</div>
 		);

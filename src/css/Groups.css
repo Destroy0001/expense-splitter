@@ -1,0 +1,39 @@
+.Add-groups-button{
+	position: relative;
+	height: 40px;
+	width: 200px;
+	border-radius: 0;
+	display: block;
+	text-align: center;
+	font-size: 0.6em;
+	box-shadow: 2px 2px 2px #888888;
+	top: 20%;
+	margin: 0 auto;
+}
+
+.Groups-content{
+	height: 100%;
+	margin: 0 auto;
+	border: 1px solid;
+}
+
+.Groups-list{
+	position: relative;
+	top:10%;
+	margin:0 auto;
+	height:60%;
+	width: 90%;
+	border: 2px solid;
+	box-shadow: 2px 2px 2px #888888;
+}
+
+.Groups-list-button{
+	border-radius: 0;
+}
+
+.Group-expenses{
+	position:relative;
+	height: 80%;
+	width: 100%;
+	top: 9%;
+}

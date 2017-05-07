@@ -1,0 +1,15 @@
+.Dashboard-content{
+	height:100%;
+}
+
+.Add-expenses{
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	bottom: 12%;
+	right: 5%;
+	border-color: none;
+	border-width:0px;
+	box-shadow: 2px 2px 2px #888888;
+}

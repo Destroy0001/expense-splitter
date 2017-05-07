@@ -12,7 +12,7 @@ class App extends Component {
 				<div className="App-content">
 					{this.props.children}
 				</div>
-				<div className=".App-footer-spacer"></div>
+				<div className="App-footer-spacer"></div>
 				<div className="App-footer">
 					<span className="App-footer-text">&copy; 2017 Ashish Jhanwar</span>
 				</div>

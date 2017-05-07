@@ -1,12 +1,2 @@
-/* contains action constants */
-export const LOGIN_REQUEST = 'LOGIN_REQUEST';
-export const LOGIN_SUCCESS = 'LOGIN_SUCCESS';
-export const LOGIN_FAILED = 'LOGIN_FAILED';
-
-export const LOGOUT = 'LOGOUT';
-
-export const REGISTRATION_REQUEST ='REGISTRATION_REQUEST';
-export const REGISTRATION_SUCCESS ='REGISTRATION_REQUEST';
-export const REGISTRATION_FAILED = 'REGISTRATION_FAILED';
-
-export const SET_ERROR_MESSAGE = 'SET_ERROR_MESSAGE';
+export const ADD_FRIEND = 'ADD_FRIEND';
+export const ADD_GROUP = ' ADD_GROUP';
