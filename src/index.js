@@ -18,9 +18,35 @@ import UserReducer from './reducers/UserReducer';
 import AppContainer from './containers/AppContainer';
 import './index.css';
 
+/*loads state of the application from localStorage*/
+const importState = () => {
+	try{
+		const storedState = localStorage.getItem('expense-splitter');
+		if(!storedState){
+			return undefined;
+		}
+		return JSON.parse(storedState);
+	}catch(err){
+		return undefined;
+	}
+}
+
+/*saves state of the application to the localStorage*/
+const exportState = (state) => {
+	try{
+		const storedState = JSON.stringify(state);
+		localStorage.setItem('expense-splitter',storedState);
+	}catch(err){
+		localStorage.setItem('expense-splitter',undefined);
+	}
+}
+
+/*creating store*/
+const importedState = importState();
 const store = createStore(
-	combineReducers({session:SessionReducer,user:UserReducer}),
-	applyMiddleware(thunk)
+		combineReducers({session:SessionReducer,user:UserReducer}),
+		importedState,
+		applyMiddleware(thunk)
 	);
 
 ReactDOM.render(
@@ -31,3 +57,8 @@ ReactDOM.render(
 	</Provider>,
 	document.getElementById('app')
 )
+
+/*writes the application state to localStorage on change*/
+store.subscribe(()=>{
+	exportState(store.getState());
+})

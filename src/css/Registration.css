@@ -24,6 +24,16 @@
 	z-index: 0;
 }
 
+.Registration-error {
+	position: absolute;
+	top: 5%;
+	left: 0;
+	right: 0;
+	color: #ffffff;
+	font-size: 0.8em;
+	z-index: 5;
+}
+
 .Registration-button {
 	margin-top: 4px;
 	width:75%;

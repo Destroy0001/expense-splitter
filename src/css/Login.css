@@ -26,8 +26,9 @@
 	top: 5%;
 	left: 0;
 	right: 0;
-	color: #d9534f;
-	font-size: 1.2em;
+	color: #ffffff;
+	font-size: 0.8em;
+	z-index: 5;
 }
 
 .Login-button {

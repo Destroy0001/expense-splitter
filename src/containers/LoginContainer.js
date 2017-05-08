@@ -12,15 +12,22 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
 	return {
-		doLogin: (username,password) => {
-			dispatch(loginAction(username,password))
+		doLogin: (props,username,password) => {
+			dispatch(loginAction(props,username,password))
 		}
 	}
 };
 
 class LoginContainer extends Component {
+	componentWillMount(){
+		if(this.props.loggedIn){
+			const {history} = this.props;
+			history.push('/dashboard')
+		}
+	}
+	
 	render() {
-		return <Login doLogin={this.props.doLogin} loggedIn={this.props.loggedIn}/>;
+		return <Login {...this.props}/>;
 	}
 }
 

@@ -7,7 +7,7 @@ class Groups extends Component {
 			<div className="Groups-content">
 				<div className="settlements"></div>
 				<div className="Groups-list">
-				<DropdownButton title="CHOOSE A GROUP" className="Groups-list-button">
+				<DropdownButton title="CHOOSE A GROUP" className="Groups-list-button" id="group-selector">
 				</DropdownButton>
 				<div className="Group-expenses">
 				</div>

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Tab from '../components/Tab';
+import PropTypes from 'prop-types';
 
 class TabContainer extends Component {
 	constructor(props){
@@ -15,9 +16,9 @@ class TabContainer extends Component {
 }
 
 TabContainer.propTypes = {
-	styleName: React.PropTypes.string.isRequired,
-	header: React.PropTypes.string.isRequired,
-	children: React.PropTypes.object.isRequired
+	styleName: PropTypes.string.isRequired,
+	header: PropTypes.string.isRequired,
+	children: PropTypes.object.isRequired
 }
 
 
